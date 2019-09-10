@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+	
+	
+	<div class='row'>
+		<div class='col-sm-3 col-xs-12'>
+		<h1>{{ obj.tag }}</h1>	
+		</div>
+		<div class='col-sm-9'>
+
+			{% for tweet in obj.get_tweets %}
+			{{ tweet.content }} <br/>
+			{% endfor %}
+		</div>
+	</div>
+	
+{% endblock content %}
+
+
+
+
+
+
+		<!-- {% for object in object_list %} -->
+			<!-- <div class="media"> -->
+				<!-- <div class="media-left"> -->
+					<!-- <a href="#"> -->
+						<!-- {% if object.image %} -->
+							<!-- <img class="media-object" src="..." alt="..."> -->
+						<!-- {% endif %} -->
+					<!-- </a> -->
+				<!-- </div> -->
+				<!-- <div class="media-body"> -->
+					<!-- {{ object.content }}<br/> -->
+					<!-- via {{ object.user }} | {{ object.timestamp|timesince }} ago | <a href='{{ object.get_absolute_url }}'>View</a> -->
+				<!-- </div> -->
+			<!-- </div> -->
+			<!-- <hr/> -->
+		<!-- {% empty %} -->
+			<!-- {% if request.GET.q %} -->
+			<!-- <p>No threats found.</p> -->
+			<!-- {% else %} -->
+			<!-- <p>No tweets yet.</p> -->
+			<!-- {% endif %} -->
+		<!-- {% endfor %} -->
+		

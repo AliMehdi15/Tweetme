@@ -1,0 +1,72 @@
+<!-- <style> -->
+<!-- #tweet-container{ -->
+
+<!-- } -->
+<!-- </style> -->
+
+<!-- {% block script %} -->
+<!-- <script> -->
+<!-- function getParameterByName(name, url) { -->
+    <!-- if (!url) url = window.location.href; -->
+    <!-- name = name.replace(/[\[\]]/g, '\\$&'); -->
+    <!-- var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), -->
+        <!-- results = regex.exec(url); -->
+    <!-- if (!results) return null; -->
+    <!-- if (!results[2]) return ''; -->
+    <!-- return decodeURIComponent(results[2].replace(/\+/g, ' ')); -->
+<!-- } -->
+
+
+<!-- $(document).ready(function(){ -->
+	<!-- console.log("working"); -->
+	
+	<!-- var query = getParameterByName('q') -->
+	<!-- console.log(query) -->
+	<!-- <!-- var tweetList = []; --> -->
+	
+	<!-- <!-- function parseTweets(){ --> -->
+		<!-- <!-- if (tweetList == 0){ --> -->
+			<!-- <!-- $("#tweet-container").text("No Tweets currently found.") --> -->
+		<!-- <!-- }    --> -->
+			<!-- <!-- else {  --> -->
+
+	<!-- } -->
+	
+	<!-- $.ajax({ -->
+		<!-- url: "/api/tweet/", -->
+		<!-- data: { -->
+			<!-- "q": query -->
+		<!-- }, -->
+		<!-- method: "GET", -->
+		<!-- success: function(data){ -->
+			<!-- //console.log(data) -->
+			<!-- tweetlist = data -->
+		    <!-- $.each(tweetList, function(key, value){ -->
+				<!-- var tweetKey = key; -->
+				<!-- var tweetContent = value.content; -->
+				<!-- var tweetUser = value.user; -->
+				<!-- $("#tweet-container").append( -->
+					<!-- "<div class=\"media\"><div class=\"media-body\">" + tweetContent + "<br/> via " + tweetUser.username + " | " + "<a href='#'>View</a>" + "</div></div><hr/>" -->
+						
+						
+				<!-- ) -->
+					
+					 
+			<!-- }) -->
+		<!-- } -->
+			<!-- <!-- parseTweets() --> -->
+
+		<!-- }, -->
+		<!-- error: function(data){ -->
+			<!-- console.log("error") -->
+			<!-- console.log(data) -->
+		<!-- } -->
+		
+	
+	<!-- }) -->
+	
+<!-- }); -->
+<!-- </script> -->
+
+
+<!-- {% endblock script %} -->
